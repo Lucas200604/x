@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+    <meta name="description" content="Una celebración especial de nuestro amor">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Countdown Lock Screen -->
+    <div id="lockScreen" class="lock-screen">
+        <div class="lock-content">
+            <div class="floating-hearts"></div>
+            <h1 class="lock-title">Casi un año</h1>
+            <p class="lock-subtitle">La pagina se abrirá cuando termine el temporizador</p>
+
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-value">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-value">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-value">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-value">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content hidden">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Para mi</span>
+                    <span class="title-line">Laurita</span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Galeria</h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-index="0">
+                        <img src="image1.jpg" alt="Momento especial 1">
+                    </div>
+                    <div class="gallery-item" data-index="1">
+                        <img src="image2.jpg" alt="Momento especial 2">
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <img src="image3.jpg" alt="Momento especial 3">
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="image4.jpg" alt="Momento especial 4">
+                    </div>
+                    <div class="gallery-item" data-index="4">
+                        <img src="image5.jpg" alt="Momento especial 5">
+                    </div>
+                    <div class="gallery-item" data-index="5">
+                        <img src="image6.jpg" alt="Momento especial 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animated Messages Section
+        <section id="messages" class="messages-section">
+            <div class="container">
+                <h2 class="section-title">Palabras del Corazón</h2>
+
+                <div class="messages-container">
+                    <div class="message-card" data-delay="0">
+                        <div class="message-icon">💝</div>
+                        <p class="message-text">Cada día a tu lado es un regalo que atesoro en mi corazón</p>
+                    </div>
+                    <div class="message-card" data-delay="200">
+                        <div class="message-icon">✨</div>
+                        <p class="message-text">Eres la luz que ilumina mis días y la estrella que guía mis noches</p>
+                    </div>
+                    <div class="message-card" data-delay="400">
+                        <div class="message-icon">🌹</div>
+                        <p class="message-text">En tus ojos encontré mi hogar, en tu sonrisa mi felicidad</p>
+                    </div>
+                    <div class="message-card" data-delay="600">
+                        <div class="message-icon">💫</div>
+                        <p class="message-text">Contigo aprendí que el amor verdadero existe y es para siempre</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Reasons I Love You Section -->
+        <section id="reasons" class="reasons-section">
+            <div class="container">
+                <h2 class="section-title">Razones Por Las Que Te Amo</h2>
+                <p class="section-subtitle">Haz click en cada tarjeta para descubrir...</p>
+
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">1</div>
+                                <p class="reason-hint">Tu Sonrisa</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">Tu sonrisa ilumina mi mundo y hace que todos mis problemas
+                                    desaparezcan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">2</div>
+                                <p class="reason-hint">Tu Amor</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">La forma en que me amas me hace sentir la persona más afortunada
+                                    del universo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">3</div>
+                                <p class="reason-hint">Tu Forma de Ser</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">Eres auténtica, única e irrepetible. No cambiaría nada de ti</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">4</div>
+                                <p class="reason-hint">Tu Apoyo</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">Siempre estás ahí para mí, en los buenos y malos momentos, sin
+                                    condiciones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">5</div>
+                                <p class="reason-hint">Nuestros Momentos</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">Cada segundo contigo es un recuerdo hermoso que guardo en mi
+                                    corazón</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-card-inner">
+                            <div class="reason-front">
+                                <div class="reason-number">6</div>
+                                <p class="reason-hint">Nuestro Futuro</p>
+                            </div>
+                            <div class="reason-back">
+                                <p class="reason-text">No puedo esperar a vivir mil aventuras más a tu lado, hoy y
+                                    siempre</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="letter" class="letter-section">
+            <div class="container">
+                <h2 class="section-title">Una Carta Para Ti</h2>
+
+                <div class="letter-container">
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body">
+                            <p class="envelope-text">Haz click para abrir</p>
+                        </div>
+                    </div>
+
+                    <div class="letter-paper" id="letterPaper">
+                        <div class="letter-content">
+                            <p class="letter-greeting">Mi amor,</p>
+
+                            <p class="letter-paragraph">
+                                Hoy celebramos otro año juntos, y mi corazón se desborda de gratitud por tenerte a mi
+                                lado.
+                                Cada día contigo es una aventura nueva, una sonrisa nueva, un "te amo" nuevo.
+                            </p>
+
+                            <p class="letter-paragraph">
+                                Has llenado mi vida de colores que ni siquiera sabía que existían. Me has enseñado que
+                                el
+                                amor verdadero no es perfecto, pero es real, es profundo, es eterno.
+                            </p>
+
+                            <p class="letter-paragraph">
+                                Gracias por ser mi compañera, mi cómplice, mi mejor amiga y el amor de mi vida.
+                                Aquí está a muchos años más de risas, aventuras y amor infinito.
+                            </p>
+
+                            <p class="letter-signature">
+                                Con todo mi amor,<br>
+                                <span class="signature-name">Tuyo por siempre</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Sky of Wishes -->
+        <section id="sky" class="sky-section">
+            <div class="container">
+                <h2 class="section-title">Cielo de Deseos</h2>
+                <p class="section-subtitle">Haz click para crear estrellas fugaces con nuestros sueños</p>
+
+                <canvas id="skyCanvas" class="sky-canvas"></canvas>
+
+                <div class="wishes-list">
+                    <div class="wish-item">✨ 1 Año</div>
+                    <div class="wish-item">💫 Sueños</div>
+                    <div class="wish-item">🌟 Metas</div>
+                    <div class="wish-item">⭐ Recuerdos inolvidables</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Hecho con con amor para ti</p>
+                <p class="footer-date">2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
