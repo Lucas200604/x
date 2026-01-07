@@ -1,7 +1,7 @@
 // ============================================
 // COUNTDOWN TIMER
 // ============================================
-const targetDate = new Date('2026-01-06T00:00:00').getTime();
+const targetDate = new Date('2026-01-08T00:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
